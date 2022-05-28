@@ -1,0 +1,43 @@
+---
+name: Update AoC Badges
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2021
+          starsRegex: '(?<=\[2021\]\(https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)'
+          userid: 648624
+          session: ${{ secrets.AOC_SESSION }}
+      - uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2020
+          starsRegex: '(?<=\[2020\]\(https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)'
+          userid: 648624
+          session: ${{ secrets.AOC_SESSION }}
+      - uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2019
+          starsRegex: '(?<=\[2019\]\(https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)'
+          userid: 648624
+          session: ${{ secrets.AOC_SESSION }}
+
+      - uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2015
+          starsRegex: '(?<=\[2015\]\(https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)'
+          userid: 648624
+          session: ${{ secrets.AOC_SESSION }}
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update badges
+          file_pattern: README.md
