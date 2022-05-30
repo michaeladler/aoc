@@ -32,6 +32,13 @@ jobs:
 
       - uses: joblo2213/aoc-badges-action@v3
         with:
+          year: 2018
+          starsRegex: '(?<=\[2018\]\(https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)'
+          userid: 648624
+          session: ${{ secrets.AOC_SESSION }}
+
+      - uses: joblo2213/aoc-badges-action@v3
+        with:
           year: 2015
           starsRegex: '(?<=\[2015\]\(https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)'
           userid: 648624
