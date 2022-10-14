@@ -12,7 +12,7 @@ My solutions for [Advent of Code](https://adventofcode.com/).
 | 2020 | [![2020](https://img.shields.io/badge/stars%20⭐-50-yellow)](https://adventofcode.com/2020/stats) |
 | 2019 | [![2019](https://img.shields.io/badge/stars%20⭐-50-yellow)](https://adventofcode.com/2019/stats) |
 | 2018 | [![2018](https://img.shields.io/badge/stars%20⭐-24-yellow)](https://adventofcode.com/2018/stats) |
-| 2015 | [![2015](https://img.shields.io/badge/stars%20⭐-42-yellow)](https://adventofcode.com/2015/stats) |
+| 2015 | [![2015](https://img.shields.io/badge/stars%20⭐-44-yellow)](https://adventofcode.com/2015/stats) |
 
 ## Goals
 
